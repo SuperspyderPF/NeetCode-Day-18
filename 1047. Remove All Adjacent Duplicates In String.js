@@ -1,0 +1,1 @@
+removeDuplicates=s=>{var arr = [];for( c of s){if(c === arr[arr.length -1]){while(arr[arr.length - 1] === c){arr.pop();}}else{arr.push(c);}}return arr.join('');}

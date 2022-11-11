@@ -1,0 +1,1 @@
+function StockSpanner () {this.freq = {};this.prices = [0];this.currentStreak = 0};StockSpanner.prototype.next=function(price){this.prices.push(price);var i = this.prices.length-1;var counter = 0;while(i>0&&this.prices[i]<= price){counter += 1;i -= 1}return counter}
